@@ -1,0 +1,43 @@
+footer {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-around;
+	border-top: 1px solid #111;
+	align-items: center;
+	width: 100%;
+	height: fit-content;
+
+	.copyright {
+		font-size: 0.8rem;
+		padding: 1rem;
+		.name {
+			font-size: 0.9rem;
+			font-weight: 600;
+		}
+	}
+
+	.scroll {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+		font-size: 1.2rem;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #090909;
+			color: #fff;
+			transition: 0.1s ease;
+			border-radius: 30px;
+		}
+
+		svg {
+			font-size: 1.3rem;
+			padding: 10px;
+		}
+	}
+	.logo {
+		padding: 1rem;
+	}
+}

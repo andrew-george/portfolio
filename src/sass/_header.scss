@@ -1,0 +1,59 @@
+@use 'variables';
+@use 'breakpoints' as *;
+
+header {
+	background: url('/assets/images/header-opt.jpg') no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	transition: 0.5s ease all;
+	margin-bottom: 5rem;
+
+	@media (min-width: $md) {
+		background: url('/assets/images/header-headspace-opt.jpg') no-repeat center;
+		background-size: cover;
+		height: 100vh;
+		display: flex;
+		transition: 0.5s ease all;
+		margin-bottom: 5rem;
+	}
+
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		margin: auto;
+
+		.greeting {
+			font-family: variables.$sans;
+			text-align: left;
+			font-size: 2rem;
+			margin: 0;
+
+			span {
+				font-family: variables.$serif;
+				display: block;
+				font-size: 4rem;
+			}
+		}
+
+		.job-title {
+			font-size: 2rem;
+			margin: 0;
+		}
+
+		.btn {
+			border: 1px solid white;
+			width: fit-content;
+			padding: 1rem;
+			border-radius: 2px;
+			margin-top: 1rem;
+			transition: 0.3s ease all;
+
+			&:hover {
+				background-color: #fff;
+				color: #000;
+			}
+		}
+	}
+}

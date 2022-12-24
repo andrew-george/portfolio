@@ -1,0 +1,32 @@
+.reveal-section {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.reveal-skill {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.reveal-contact {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.reveal-project {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.active {
+  transform: translateY(0);
+  opacity: 1;
+}
