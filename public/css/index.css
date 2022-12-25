@@ -259,6 +259,7 @@ header .text-container .btn:hover {
 .skills--container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 30%;
   padding: 3rem;
   margin: auto;
   justify-content: center;

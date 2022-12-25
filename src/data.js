@@ -1,5 +1,5 @@
 import { FaBootstrap, FaCss3Alt, FaHtml5, FaJsSquare, FaReact, FaSass } from 'react-icons/fa'
-import { SiNextdotjs, SiTypescript } from 'react-icons/si'
+import { SiNextdotjs, SiStyledcomponents, SiTypescript } from 'react-icons/si'
 
 export const logos = {
 	html: <FaHtml5 />,
@@ -10,6 +10,7 @@ export const logos = {
 	react: <FaReact />,
 	next: <SiNextdotjs />,
 	typescript: <SiTypescript />,
+	styledComponents: <SiStyledcomponents />,
 }
 
 export const skills = [
@@ -37,7 +38,7 @@ export const projects = [
 		title: 'Personal Portfolio',
 		description:
 			'Responsively designed portfolio to include all my projects and represent my technical skills and aesthetic',
-		techs: ['html', 'sass', 'javascript'],
+		techs: ['sass', 'react'],
 		repoLink: 'https://github.com/andrew-george/portfolio',
 		demo: `${publicAssetsPath}/portfolio-mockup.png`,
 		liveLink: 'https://andrewberty.vercel.app/',
@@ -52,10 +53,18 @@ export const projects = [
 	},
 	{
 		title: 'O Fortuna',
-		description: 'O Fortuna is a placeholder text generator with latin flavor ',
+		description: 'O Fortuna is a placeholder text generator with latin flavor',
 		techs: ['sass', 'react'],
 		repoLink: 'https://github.com/andrew-george/O-Fortuna',
 		demo: `${publicAssetsPath}/o-fortuna-mockup.png`,
 		liveLink: 'https://o-fortuna.vercel.app/',
+	},
+	{
+		title: 'Die Zeitung',
+		description: 'Modern designed blog to share stories and experiences',
+		techs: ['typescript', 'next', 'styledComponents'],
+		repoLink: 'https://github.com/andrew-george/die-zeitung-blog',
+		demo: `${publicAssetsPath}/die-zeitung-mockup.png`,
+		liveLink: 'https://die-zeitung-blog.vercel.app/',
 	},
 ]
