@@ -35,7 +35,6 @@ a {
 /* CTA */
 .primary-btn {
   background-color: rgb(255, 255, 255); /* 21217c  darkblue*/
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem 1rem;
@@ -157,7 +156,6 @@ header .text-container .job-title {
 }
 header .text-container .btn {
   border: 1px solid white;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem;
@@ -308,7 +306,6 @@ footer {
   border-top: 1px solid #111;
   align-items: center;
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }

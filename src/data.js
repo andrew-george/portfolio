@@ -18,10 +18,12 @@ export const skills = [
 	'/assets/images/tech-logos/css.svg',
 	'/assets/images/tech-logos/sass.svg',
 	'/assets/images/tech-logos/bootstrap.svg',
+	'/assets/images/tech-logos/tailwind.svg',
 	'/assets/images/tech-logos/javascript.svg',
 	'/assets/images/tech-logos/typescript.svg',
 	'/assets/images/tech-logos/react.svg',
 	'/assets/images/tech-logos/nextjs.svg',
+	'/assets/images/tech-logos/cypress.svg',
 	'/assets/images/tech-logos/git.svg',
 	'/assets/images/tech-logos/github.svg',
 	'/assets/images/tech-logos/netlify.svg',
@@ -29,6 +31,9 @@ export const skills = [
 	'/assets/images/tech-logos/vercel.svg',
 	'/assets/images/tech-logos/figma.svg',
 	'/assets/images/tech-logos/xd.svg',
+	'/assets/images/tech-logos/nodejs.svg',
+	'/assets/images/tech-logos/expressjs.svg',
+	'/assets/images/tech-logos/mongodb.svg',
 ]
 
 const publicAssetsPath = './assets/images/projects'
@@ -66,5 +71,13 @@ export const projects = [
 		repoLink: 'https://github.com/andrew-george/die-zeitung-blog',
 		demo: `${publicAssetsPath}/die-zeitung-mockup.png`,
 		liveLink: 'https://die-zeitung-blog.vercel.app/',
+	},
+	{
+		title: 'Palette',
+		description: 'An interactive color mixer and palette generator',
+		techs: ['typescript', 'next', 'css'],
+		repoLink: 'https://github.com/andrew-george/palette',
+		demo: `${publicAssetsPath}/palette-mockup.png`,
+		liveLink: 'https://palette-app.vercel.app/',
 	},
 ]
