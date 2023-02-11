@@ -19,6 +19,7 @@
 		// backdrop-filter: blur(50px);
 		margin: 1rem;
 		border-radius: 10px;
+		position: relative;
 
 		&::before {
 			content: '';

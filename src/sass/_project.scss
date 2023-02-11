@@ -95,10 +95,10 @@
 			position: absolute;
 			filter: blur(100px);
 			transition: all 0.2s ease-in-out;
-			opacity: 20%;
+			opacity: 10%;
 		}
 		&:hover::before {
-			opacity: 50%;
+			opacity: 20%;
 			transform: scale(1.1);
 		}
 	}
