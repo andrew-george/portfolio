@@ -1,6 +1,4 @@
-import Contact from './Contact'
-import Projects from './Projects'
-import Skills from './Skills'
+import { Contact, Projects, Skills } from './'
 
 function Main() {
 	return (

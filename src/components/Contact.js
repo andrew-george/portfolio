@@ -3,11 +3,11 @@ import Fade from 'react-reveal/Fade'
 
 function Contact() {
 	return (
-		<Fade bottom distance='50px' duration={600}>
-			<section id='contact'>
+		<section id='contact'>
+			<Fade bottom distance='500px' duration={1000}>
 				<h2 className='section-title'>Contact</h2>
 
-				<div className='contact--container'>
+				<div className='contact-container'>
 					<a className='contact' href='https://github.com/andrew-george'>
 						<FaGithub />
 					</a>
@@ -18,8 +18,8 @@ function Contact() {
 						<FaAt />
 					</a>
 				</div>
-			</section>
-		</Fade>
+			</Fade>
+		</section>
 	)
 }
 

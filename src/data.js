@@ -1,17 +1,22 @@
-import { FaBootstrap, FaCss3Alt, FaHtml5, FaJsSquare, FaReact, FaSass } from 'react-icons/fa'
+import { FaBootstrap, FaCss3Alt, FaHtml5, FaJsSquare, FaNodeJs, FaReact, FaSass } from 'react-icons/fa'
 import { SiNextdotjs, SiStyledcomponents, SiTypescript } from 'react-icons/si'
+import { VscJson } from 'react-icons/vsc'
 
 export const logos = {
 	html: <FaHtml5 />,
 	css: <FaCss3Alt />,
 	sass: <FaSass />,
 	javascript: <FaJsSquare />,
+	nodejs: <FaNodeJs />,
+	json: <VscJson />,
 	bootstrap: <FaBootstrap />,
 	react: <FaReact />,
 	next: <SiNextdotjs />,
 	typescript: <SiTypescript />,
 	styledComponents: <SiStyledcomponents />,
 }
+
+const publicAssetsPath = './assets/images/projects'
 
 export const skills = [
 	'/assets/images/tech-logos/html.svg',
@@ -36,8 +41,6 @@ export const skills = [
 	'/assets/images/tech-logos/mongodb.svg',
 ]
 
-const publicAssetsPath = './assets/images/projects'
-
 export const projects = [
 	{
 		title: 'Personal Portfolio',
@@ -45,7 +48,7 @@ export const projects = [
 			'Responsively designed portfolio to include all my projects and represent my technical skills and aesthetic',
 		techs: ['sass', 'react'],
 		repoLink: 'https://github.com/andrew-george/portfolio',
-		demo: `${publicAssetsPath}/portfolio-mockup.png`,
+		demo: `${publicAssetsPath}/portfolio-frameless-mockup.png`,
 		liveLink: 'https://andrewberty.vercel.app/',
 	},
 	{
@@ -53,7 +56,7 @@ export const projects = [
 		description: 'Minimal note taking app to minimize distractions while taking notes',
 		techs: ['sass', 'react'],
 		repoLink: 'https://github.com/andrew-george/margin-app-v2.0',
-		demo: `${publicAssetsPath}/margin-mockup.png`,
+		demo: `${publicAssetsPath}/margin-frameless-mockup.png`,
 		liveLink: 'https://imargin.vercel.app/',
 	},
 	{
@@ -61,7 +64,7 @@ export const projects = [
 		description: 'O Fortuna is a placeholder text generator with latin flavor',
 		techs: ['sass', 'react'],
 		repoLink: 'https://github.com/andrew-george/O-Fortuna',
-		demo: `${publicAssetsPath}/o-fortuna-mockup.png`,
+		demo: `${publicAssetsPath}/o-fortuna-frameless-mockup.png`,
 		liveLink: 'https://o-fortuna.vercel.app/',
 	},
 	{
@@ -69,7 +72,7 @@ export const projects = [
 		description: 'Modern designed blog to share stories and experiences',
 		techs: ['typescript', 'next', 'styledComponents'],
 		repoLink: 'https://github.com/andrew-george/die-zeitung-blog',
-		demo: `${publicAssetsPath}/die-zeitung-mockup.png`,
+		demo: `${publicAssetsPath}/die-zeitung-frameless-mockup.png`,
 		liveLink: 'https://die-zeitung-blog.vercel.app/',
 	},
 	{
@@ -77,7 +80,26 @@ export const projects = [
 		description: 'An interactive color mixer and palette generator',
 		techs: ['typescript', 'next', 'css'],
 		repoLink: 'https://github.com/andrew-george/palette',
-		demo: `${publicAssetsPath}/palette-mockup.png`,
+		demo: `${publicAssetsPath}/palette-frameless-mockup.png`,
 		liveLink: 'https://palette-app.vercel.app/',
+	},
+]
+
+export const extensions = [
+	{
+		title: 'Fontsy',
+		description: 'A simple extension to control editor and terminal font sizes, weight and ligatures',
+		techs: ['nodejs'],
+		repoLink: 'https://github.com/andrew-george/fontsy-vscode-extension',
+		demo: `${publicAssetsPath}/fontsy-demo.png`,
+		marketplace: 'https://marketplace.visualstudio.com/items?itemName=andrewberty.fontsy',
+	},
+	{
+		title: 'Noir Themes',
+		description: 'Collection of refined popular themes, just darker or cleaner.',
+		techs: ['json'],
+		repoLink: 'https://github.com/andrew-george/Noir-vscode-theme',
+		demo: `${publicAssetsPath}/noir-demo.png`,
+		marketplace: 'https://marketplace.visualstudio.com/items?itemName=andrewberty.noir-theme-bundle',
 	},
 ]

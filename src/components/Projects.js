@@ -1,19 +1,23 @@
 import Fade from 'react-reveal/Fade'
-import { projects } from '../data'
-import ProjectItem from './ProjectItem'
+import { extensions, projects } from '../data'
+import { ProjectItem } from './'
 
 function Projects() {
 	return (
-		<Fade bottom distance='50px' duration={600}>
-			<section id='projects'>
+		<section id='projects'>
+			<Fade left distance='500px' duration={1000}>
 				<h2 className='section-title'>Projects</h2>
-				{projects.map((project, index) => (
-					<Fade distance='50px' duration={600} bottom key={index}>
-						<ProjectItem project={project} />
-					</Fade>
-				))}
-			</section>
-		</Fade>
+			</Fade>
+			{projects.map((project, index) => (
+				<ProjectItem project={project} key={index} />
+			))}
+			<Fade left distance='500px' duration={1000}>
+				<h2 className='section-title'>VS Code Extensions</h2>
+			</Fade>
+			{extensions.map((extension, index) => (
+				<ProjectItem project={extension} key={index} />
+			))}
+		</section>
 	)
 }
 

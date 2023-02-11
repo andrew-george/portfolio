@@ -1,55 +1,50 @@
 @use 'variables';
+
+:root {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
 body {
-  font-family: variables.$sans;
-  background-color: #000;
-  color: white;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  position: relative;
+	font-family: variables.$mono;
+	background-color: #000;
+	color: white;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	position: relative;
 
-  &::-webkit-scrollbar {
-    width: 6px; /* width of the entire scrollbar */
-  }
+	&::-webkit-scrollbar {
+		width: 6px; /* width of the entire scrollbar */
+	}
 
-  &::-webkit-scrollbar-track {
-    background: #000000; /* color of the tracking area */
-  }
+	&::-webkit-scrollbar-track {
+		background: #000000; /* color of the tracking area */
+	}
 
-  &::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255); /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-  }
+	&::-webkit-scrollbar-thumb {
+		background-color: rgb(255, 255, 255); /* color of the scroll thumb */
+		border-radius: 20px; /* roundness of the scroll thumb */
+	}
 }
 
 a {
-  color: white;
-  text-decoration: none;
-}
-
-/* CTA */
-.primary-btn {
-  background-color: rgb(255, 255, 255); /* 21217c  darkblue*/
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  color: #000;
+	color: white;
+	text-decoration: none;
 }
 
 .section-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
+	font-family: variables.$sans;
+	width: fit-content;
+	margin: 0 auto;
+	font-size: 3rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	position: relative;
 }
 
 .logo {
-  font-family: variables.$serif;
-  font-size: 1em;
-  font-weight: 800;
-  text-decoration: none;
-
-  span {
-    font-size: 1.7em;
-  }
+	width: 40px;
 }

@@ -1,9 +1,10 @@
-.contact--container {
+.contact-container {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 100%;
+	// width: 100%;
 	margin: 5rem auto;
+	flex-wrap: wrap;
 
 	.contact {
 		display: flex;
@@ -12,11 +13,12 @@
 		align-items: center;
 
 		svg {
-			font-size: 3rem;
-			transition: 0.3s ease all;
+			font-size: 4rem;
+			transition: 0.1s ease all;
+			opacity: 0.8;
 
 			&:hover {
-				transform: scale(1.05);
+				opacity: 1;
 			}
 		}
 	}

@@ -1,25 +1,27 @@
 @use 'variables';
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  width: 100%;
-  background-color: #000000;
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  transition: 0.2s ease;
-  transition-property: height;
-  margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 10vh;
+	width: 100%;
+	background-color: #000000cc;
+	backdrop-filter: blur(10px);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	margin: auto;
 
-  .menu_link {
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s ease;
+	.menu_link {
+		text-decoration: none;
+		text-transform: capitalize;
+		font-weight: 500;
+		transition: 0.1s ease;
+		z-index: 200;
+		opacity: 0.8;
 
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
+		&:hover {
+			opacity: 1;
+		}
+	}
 }

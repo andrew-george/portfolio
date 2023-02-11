@@ -1,0 +1,105 @@
+@use 'variables';
+@use 'breakpoints' as *;
+
+.project-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+	margin: 10rem auto;
+
+	@media (min-width: $lg) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 3rem auto;
+
+		@media (min-width: $lg) {
+			text-align: center;
+		}
+
+		.title {
+			font-size: 4rem;
+			margin: 0;
+			text-align: center;
+			font-family: variables.$serif;
+		}
+
+		.description {
+			font-size: 1.2rem;
+			text-align: center;
+		}
+
+		.techs {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			svg {
+				font-size: 2.5rem;
+				margin: 2rem;
+			}
+		}
+		.buttons-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.btn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 1rem;
+				margin: 1rem 2rem;
+				border-radius: 10px;
+				transition: 0.3s ease all;
+
+				&:hover {
+					background-color: #fff;
+					margin: 0.5rem 1rem;
+					padding: 0.5rem 1rem;
+					color: #000;
+				}
+
+				svg {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.img-container {
+		position: relative;
+		img {
+			max-width: 100%;
+		}
+		&::before {
+			content: '';
+			background: variables.$gradient-pink-purple;
+			// background: variables.$gradient-pink-orange;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 90%;
+			height: 90%;
+			margin: auto;
+			z-index: -1;
+			position: absolute;
+			filter: blur(100px);
+			transition: all 0.2s ease-in-out;
+			opacity: 20%;
+		}
+		&:hover::before {
+			opacity: 50%;
+			transform: scale(1.1);
+		}
+	}
+}
