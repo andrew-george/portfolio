@@ -43,6 +43,7 @@ a {
   font-weight: 800;
   text-transform: uppercase;
   position: relative;
+  text-align: center;
 }
 
 .logo {
@@ -125,23 +126,12 @@ header .text-container .job-title {
   width: 80%;
   margin: 10rem auto;
 }
-@media (min-width: 992px) {
-  .project-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .project-container .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 3rem auto;
-}
-@media (min-width: 992px) {
-  .project-container .info {
-    text-align: center;
-  }
 }
 .project-container .info .title {
   font-size: 4rem;
@@ -210,6 +200,68 @@ header .text-container .job-title {
 .project-container .img-container:hover::before {
   opacity: 20%;
   transform: scale(1.1);
+}
+
+.posts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 10rem auto;
+  gap: 30px;
+}
+.posts-container .card {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  position: relative;
+}
+.posts-container .card img {
+  border-radius: 8px 8px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 70%;
+}
+.posts-container .card .content {
+  padding: 0 1rem;
+  font-size: 0.8rem;
+}
+.posts-container .card .content p {
+  margin: 5px 0;
+}
+.posts-container .card .content .tags {
+  display: flex;
+  margin-bottom: 5px;
+  overflow-x: auto;
+}
+.posts-container .card .content .tags .tag {
+  background: linear-gradient(90deg, #c41c76 0%, #4f0c97 100%);
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.posts-container .card::before {
+  content: "";
+  background: linear-gradient(90deg, #c41c76 0%, #4f0c97 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  z-index: -1;
+  position: absolute;
+  filter: blur(100px);
+  transition: all 0.2s ease-in-out;
+  opacity: 10%;
+}
+.posts-container .card:hover::before {
+  opacity: 20%;
+  transform: scale(1.5);
 }
 
 .skills-container {

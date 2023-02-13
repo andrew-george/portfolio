@@ -10,21 +10,12 @@
 	width: 80%;
 	margin: 10rem auto;
 
-	@media (min-width: $lg) {
-		display: flex;
-		flex-direction: column;
-	}
-
 	.info {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		margin: 3rem auto;
-
-		@media (min-width: $lg) {
-			text-align: center;
-		}
 
 		.title {
 			font-size: 4rem;
